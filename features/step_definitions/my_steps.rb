@@ -8,5 +8,9 @@ Then("debo ver el mensaje {string}") do |mensaje|
 end
 
 When("jugador selecciona {string}") do |seleccion|
+    if seleccion=="Papel"
+        choose("2")
+    end
     click_button("Jugar")
 end
+
