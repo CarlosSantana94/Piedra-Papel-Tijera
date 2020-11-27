@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Bienvenido al Juego,  elije piedra papel o tijera.</h1>
-    <form action="/resultado" method="post">
+    <form action="/jugar" method="post">
         <input type="radio" name="seleccion" id="1" value="Piedra" checked/>
         <label for="piedra"> Piedra</label>
         <input type="radio" name="seleccion" id="2" value="Papel"/>
@@ -18,6 +18,7 @@
     </form>
 
     <h1> <%= session[:feedback] %> </h1>
+    <h1>La computadora seleccionó: Papel</h1>
 
 </body>
 </html>
