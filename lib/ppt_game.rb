@@ -8,4 +8,10 @@ class PiedraPapelTijera
         seleccion
     end
 
+    def seleccion_maquina
+    #Seleccion random de un valor
+    rand(2)    
+    end
+
+
 end

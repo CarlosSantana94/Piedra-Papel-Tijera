@@ -8,7 +8,7 @@ get '/' do
     erb :index
 end
 
-post '/resultado' do
+post '/jugar' do
     # ppt= PiedraPapelTijera.new 
     # seleccion= ppt.seleccion(params[:seleccion]))
     session[:feedback] = "Tu selección fue: #{params[:seleccion]}"
