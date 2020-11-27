@@ -9,7 +9,6 @@ class PiedraPapelTijera
         @seleccion_usuario = seleccion
     end
 
-    
     def seleccion_maquina(seleccion_maquina)
          # Seleccion random de un valor
          opciones = ["Piedra", "Papel", "Tijera"]
