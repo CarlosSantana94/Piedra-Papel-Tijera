@@ -7,6 +7,7 @@ enable :sessions
 get '/' do
     session[:feedback] = ""
     session[:maquina] = ""
+    session[:resultado] = ""
     erb :index
 end
 
