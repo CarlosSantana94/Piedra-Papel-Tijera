@@ -15,5 +15,13 @@ class PiedraPapelTijera
          @seleccion_maquina = opciones[seleccion_maquina]
     end
 
+    def jugar()
+        if @seleccion_usuario = "Tijera"
+            "Ganaste!"
+        end
+    end
+
+
+
 
 end

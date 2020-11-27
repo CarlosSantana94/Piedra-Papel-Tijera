@@ -13,4 +13,12 @@ describe PiedraPapelTijera do
         expect(seleccion).to eq "Papel"
     end
 
+    it 'Evalua la seleccion de la maquina se envia Papel vs la del usuario Tijera y regresa ganaste' do
+        ppt= PiedraPapelTijera.new 
+        ppt.seleccion_usuario("Tijera")
+        ppt.seleccion_maquina(1)
+        seleccion = ppt.jugar()
+        expect(seleccion).to eq "Ganaste!"
+    end
+
 end

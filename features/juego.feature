@@ -18,3 +18,8 @@ Feature: Juego una vez
     When jugador selecciona "Piedra"  
     Then debo ver el mensaje "La computadora seleccionó: Papel"
 
+    Scenario: La computadora selecciona
+    Given inicio la aplicacion
+    When jugador selecciona "Tijera"  
+    Then debo ver el mensaje "Ganaste!"
+
