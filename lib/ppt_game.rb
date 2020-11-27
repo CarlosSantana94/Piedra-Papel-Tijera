@@ -9,8 +9,9 @@ class PiedraPapelTijera
     end
 
     def seleccion_maquina
-    #Seleccion random de un valor
-    rand(2)    
+        #Seleccion random de un valor
+        opciones = ["Piedra", "Papel", "Tijera"]
+        seleccion = opciones[1]
     end
 
 
