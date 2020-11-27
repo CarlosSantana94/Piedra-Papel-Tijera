@@ -7,6 +7,17 @@
 </head>
 <body>
     <h1>Bienvenido al Juego,  elije piedra papel o tijera.</h1>
-    
+    <form action="/resultado" method="post">
+        <input type="radio" name="seleccion" id="1" value="Piedra" checked/>
+        <label for="piedra"> Piedra</label>
+        <input type="radio" name="seleccion" id="2" value="Papel"/>
+        <label for="papel"> Papel</label>
+        <input type="radio" name="seleccion" id="3" value="Tijera"/>
+        <label for="tijera"> Tijera</label>
+        <input type="submit" value="Jugar"/>
+    </form>
+
+    <h1> <%= session[:feedback] %> </h1>
+
 </body>
 </html>
